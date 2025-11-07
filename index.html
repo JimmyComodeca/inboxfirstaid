@@ -2,49 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Inbox First Aid – Fix Your Cold Email Deliverability</title>
-  <meta name="description" content="Your cold email landed in spam. Here's how to reach the inbox.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inbox First Aid — Quick Tweaks, Big Gains</title>
+  <meta name="description" content="Small deliverability tweaks with a big impact. One tool handles most of it.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#steps">Skip to content</a>
-
-  <header>
-    <h1>Almost made it. Let’s get you into the inbox.</h1>
-    <p>Your cold email hit my spam folder. Here’s how to fix deliverability fast.</p>
-    <!-- Button removed per request -->
+  <!-- Top bar with logo only -->
+  <header class="topbar" role="banner">
+    <div class="brand">
+      <span class="mark" aria-hidden="true">✚</span>
+      <span class="name">Inbox First Aid</span>
+    </div>
   </header>
 
-  <main id="steps">
-    <h2>The 5 Rescue Steps</h2>
-    <ol>
-      <li><strong>Authenticate your domain.</strong> Set up SPF, DKIM, and DMARC so providers can verify you.</li>
-      <li><strong>Warm up your mailbox.</strong> Ramp volume gradually and build a positive sender reputation.</li>
-      <li><strong>Clean your list & patterns.</strong> Remove bounces, throttle sends, and avoid sudden spikes.</li>
-      <li><strong>Keep content simple.</strong> Plain text, minimal links/images, personalized and human.</li>
-      <li><strong>Monitor placement.</strong> Test regularly, adjust sending domains, and keep tightening.</li>
-    </ol>
+  <!-- Single-screen hero (no scroll needed) -->
+  <main class="hero" role="main" aria-labelledby="h1">
+    <h1 id="h1">Your emails are landing in spam. Let’s fix that.</h1>
+    <p class="sub">
+      Tiny tweaks → massive impact: auth your domain, warm up sends, keep copy simple.
+      Rather not DIY? This one tool covers it.
+    </p>
+    <a class="btn" href="https://www.reachinbox.ai/?via=inboxfirstaid&utm_source=inboxfirstaid&utm_medium=hero" target="_blank" rel="nofollow sponsored">
+      Fix Deliverability in One Step
+    </a>
+    <p class="disc">Affiliate link — at no extra cost to you.</p>
   </main>
 
-  <section id="get-help" aria-labelledby="get-help-title">
-    <h2 id="get-help-title">One Tool That Covers This</h2>
-    <p>Most of the above is handled by a single deliverability platform. If you want the fast path, try this:</p>
-    <p>
-      <a class="btn" href="AFFILIATE_URL_HERE" target="_blank" rel="nofollow sponsored">
-        Fix Deliverability with One Tool
-      </a>
-    </p>
-    <p class="disclosure">Some links are affiliate links. I may earn a commission at no cost to you.</p>
-  </section>
-
-  <section id="about">
-    <h2>Why This Page Exists</h2>
-    <p>You emailed me. It landed in spam. I’m not a fit for your offer — but here’s a quick resource so your next prospect actually sees it.</p>
-  </section>
-
-  <footer>
-    <small>© InboxFirstAid.io • <a href="mailto:hello@inboxfirstaid.io">hello@inboxfirstaid.io</a></small>
+  <footer class="foot">
+    <small>© <span id="y"></span> Pitchwaves Media LLC • <a href="mailto:hello@thesdrnewsletter.com">hello@thesdrnewsletter.com</a></small>
   </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
+
